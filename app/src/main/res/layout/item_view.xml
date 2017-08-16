@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_view"
+    android:background="@drawable/item_list"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        android:background="@drawable/image_frame">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_gravity="center"
+            android:layout_width="148dp"
+            android:layout_height="148dp" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="233dp"
+        android:layout_height="150dp"
+        android:layout_weight="19.21">
+
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_margin="@dimen/text_margin"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="16dp" />
+
+    </FrameLayout>
+
+
+</LinearLayout>
